@@ -30,7 +30,7 @@ cat('Climate Protection versus Economic Convergence?\n',
     'reported significance levels are therefore different in the\n',
     'skript and in the paper.\n\n',
     'The paper is available at\n',
-    'https://ideas.repec.org/p/bsl/wpaper/2021-12.html\n',
+    'https://edoc.unibas.ch/85420/\n',
     '--------------------------------------------------------------\n\n',
     sep = '')
 
