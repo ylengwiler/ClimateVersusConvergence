@@ -9,7 +9,7 @@ reported significance levels are therefore different in the
 skript and in the paper.
 
 The paper is available at
-https://edoc.unibas.ch/85420/
+https://doi.org/10.5451/unibas-ep85420
 --------------------------------------------------------------
 
 Downloading Penn World Data ... done.
