@@ -95,6 +95,9 @@ cat('Downloading Potsdam Institute Climate Data via ClimateWatch ... ')
 # end_year - end_year - Show results up to this year
 # sort_col - sort_col - column to sort the table by
 # sort_dir - sort_dir - sort direction (ASC or DESC)
+
+
+# UNTIL November 2021
 url <- 'https://www.climatewatchdata.org/api/v1/data/historical_emissions'
 url <- paste(
   url,
@@ -105,6 +108,19 @@ url <- paste(
   '&sector_ids[]=1313',
   '&per_page=1000&page=1',
   sep = '')
+
+# SINCE December 2021
+url <- 'https://www.climatewatchdata.org/api/v1/data/historical_emissions'
+url <- paste(
+  url,
+  '?start_year=', year0,
+  '&end_year=', year1,
+  '&gas_ids[]=358',
+  '&sector_ids[]=1448',
+  '&per_page=1000&page=1',
+  sep = ''
+)
+
 response <- GET(url)
 pik.json <- fromJSON(rawToChar(response$content))
 
@@ -259,8 +275,8 @@ neutral_growth <- vector()
 labor_elast    <- vector()
 
 regr <- list()
-# These are the starting values I use in EViews
-init0 <- list(
+# These are the starting values I use in EViews.
+init_EViews <- list(
   alpha = 0.3,
   beta  = 0.3,
   gamma = 0.2,
