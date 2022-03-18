@@ -1,4 +1,4 @@
-Climate Protection versus Economic Convergence?
+CClimate Protection versus Economic Convergence?
 Author: Yvan Lengwiler
 
 This skript downloads the data and runs the key regressions.
